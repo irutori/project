@@ -1,251 +1,168 @@
-﻿/*
-ボタン画像 フリー素材？
-降ってくるやつ
-bg-img wachi?
-*/
-var counter = 0;
-
-function reset(){
-	counter=0;
-}
-
-function animemanage(){
-	setInterval("animation()",200)
-}
-
-function animation(){
-	if(counter < 10){
-		if(counter == 0){
-			document.area0.area0.value = "auto login";
-		}
-		if(counter == 1){
-			document.area0.area0.value = "auto login .";
-		}
-		if(counter == 2){
-			document.area0.area0.value = "auto login . .";
-		}
-		if(counter == 3){
-			document.area0.area0.value = "auto login . . .";
-		}
-		if(counter == 4){
-			document.area0.area0.value = "auto login . . .OK";
-		}
-		if(counter == 5){
-			document.area0.area0.style.display = "none";
-		}
-		if(counter == 6){
-			var obj = document.getElementsByClassName("button");
-			for(i = 0;i < 4;i = i+1){
-				reverse(obj[i]);
-			}	
-		}
-		counter+=1;
-	}else{
-		return;
+﻿//for IE
+/*
+function zoomup(num){
+	var obj = document.getElementsByClassName("button");
+	if(num == 1){
+		obj[0].style.webkitTransform = "scale(1.2)";
+	}
+	if(num == 2){
+		obj[1].style.webkitTransform = "scale(1.2)";
+	}
+	if(num == 3){
+		obj[2].style.webkitTransform = "scale(1.2)";
+	}
+	if(num == 4){
+		obj[3].style.webkitTransform = "scale(1.2)";
 	}
 	
 }
 
-function taplacechange(num){
-	var area = document.getElementsByClassName("area");
+function zoomdown(){
+	var obj = document.getElementsByClassName("button");
+	for(i=0;i<4;i++){
+		obj[i].style.webkitTransform = "none"
+	}
+}
+*/
+
+function settxt(num){
+	var obj = document.getElementById("txtArea");
 	if(num == 1){
-		area[0].style.top = '70px';
+		obj.value = "\nプロジェクトの概要と方針について";
 	}else if(num == 2){
-		area[0].style.top = '220px';
+		obj.value = "\nメンバーと役割";
 	}else if(num == 3){
-		area[0].style.top = '150px';
+		obj.value = "\nプロジェクトの進捗状況の履歴";
 	}else if(num == 4){
-		area[0].style.top = '300px';
-	}
-}
-
-function setvisi(num){
-	var area = document.getElementsByClassName("area");
-	if(num == 0){
-		area[0].style.visibility = "hidden"
-	}
-	if(num == 1){
-		area[0].style.visibility = "visible";
-	}
-}
-
-function reverse(obj){
-	if (obj.style.visibility == "hidden") {
-		obj.style.visibility = "visible"; 
-		} else {
-			obj.style.visibility = "hidden";
-		}
-}
-
-function subhide(){
-	var obj = document.getElementsByClassName("subbutton");
-	subsubhide();
-	for(i = 0;i < 4;i++){
-		obj[i].style.visibility = "hidden";
-	}
-}
-
-function subsubhide(){
-	var obj = document.getElementsByClassName("subsubbutton");
-		for(i = 0;i < 14;i++){//  									increment max
-		obj[i].style.visibility = "hidden";
-		}
-}
-
-function setforarea(num){
-	if(num == 1){
-		document.area1.area1.value = "\nプロジェクトの概要と方針について";
-	}else if(num == 2){
-		document.area1.area1.value = "\nメンバーと役割";
-	}else if(num == 3){
-		document.area1.area1.value = "\nプロジェクトの進捗状況の履歴";
-	}else if(num == 4){
-		document.area1.area1.value = "\nこのページに関して";
+		obj.value = "\nこのページに関して\n\n\n\nHints: Chromeで見ると･･･";
 	}else if(num == 11){
-		document.area1.area1.value = "\n対話を行うプログラムの作成を行う。\n\n対話の応答をより\"人間らしく\"行うためのアルゴリズムを考案する\n\nそれに伴った応答関数を実装し評価する";
+		obj.value = "\n対話を行うプログラムの作成を行う。\n\n\n対話の応答をより\"人間らしく\"行うためのアルゴリズムを考案する\n\n\nそれに伴った応答関数を実装し評価する";
 	}else if(num == 12){
-		document.area1.area1.value = "\n構文解析部はOpenNLPを利用する\n\n実装は各々担当箇所を決め行う\n\n使用言語はjava\n\nまた、応答関数のアルゴリズムの考案は全員で行う";
+		obj.value = "\n使用言語はjava\n\n\n構文解析部はOpenNLPを利用し実装する\n\n\nまた、応答関数のアルゴリズムの考案は全員で行う";
+	}else if(num == 13){
+		obj.value = "\n現在の対話応答はデータベース依存\n\n\nデータベースに依存せずに、どれだけ人間らしい応答が出来るかを検証する";
 	}else if(num == 21){
-		document.area1.area1.value = "\nプロジェクトリーダー\n\n応答関数の実装担当\n	及び構文解析部実装ヘルプ\n\nほむほむほむほむ";
+		obj.value = "\nプロジェクトリーダー\n\n\n実装担当：\n\n 応答関数部\n\n  及び\n\n 構文解析部ヘルプ\n\n\n\nほむほむ";
 	}else if(num == 22){
-		document.area1.area1.value = "\n応答関数部の実装を担当";
+		obj.value = "\n\n実装担当:\n\n 応答関数部";
 	}else if(num == 23){
-		document.area1.area1.value = "\n構文解析部の実装担当\n\nemt!emt!";
+		obj.value = "\n\n実装担当:\n\n 構文解析部\n\n\n\nemt!emt!";
 	}else if(num == 24){
-		document.area1.area1.value = "\n構文解析部の実装担当";
+		obj.value = "\n\n実装担当:\n\n 構文解析部\n\n\n";
 	}else if(num == 25){
-		document.area1.area1.value = "\n応答関数の実装担当";
+		obj.value = "\n\n実装担当:\n\n 応答関数部";
 	}else if(num == 26){
-		document.area1.area1.value = "\n同上\n";
+		obj.value = "\n\n実装担当:\n\n 応答関数部\n\n  及び\n\n webページ\n\n\n\nauto loginは演出です";
 	}else if(num == 27){
-		document.area1.area1.value = "\n入出力部の実装担当";
+		obj.value = "\n\n実装担当:\n\n 入出力部\n\n\n\n（・ワ・）＜です？";
 	}else if(num == 31){
-		document.area1.area1.value = "\n2012-10-26\n\nｗｅｂページのプロトタイプをチーム内に公開\n\n役割分担の決定";
+		obj.value = "\n2012-10-26\n\nwebページのプロトタイプをチーム内に公開\n\n役割分担の決定";
 	}else if(num == 32){
-		document.area1.area1.value = "\n2012-10-30\n\nwebページ公開"
+		obj.value = "\n2012-10-30\n\nwebページ公開"
+	}else if(num == 33){
+		obj.value = "\n2012-11-07\n\n第二回中間発表\n今後の課題:情報科学的に意味のあること\n\n\n追記\nwebページのアップグレード\nIEに対応しました";
 	}
-	/* ここに追加
-	   template
-
-		else if(num == 3n){
-		document.area1.area1.value = "hoge";
+	
+	/* template
+	else if(num == 3n){
+		obj.value = "\n";
 	}
 	*/
 	else if(num == 41){
-		document.area1.area1.value ="";
+		obj.value ="\nログアウト出来ないのはこのページの\n\n    \"本来の仕様\"\n\nである";
 	}else if(num == 42){
-		document.area1.area1.value ="そんなものはない！";
-	}else if(num == 43){
-		document.area1.area1.value =　"\nログアウト出来ないのはこのページの\n\n    \"本来の仕様\"\n\nである";
-	}
-	
-	
+		obj.value ="";
+	}	
 }
 
-function dispmain(num){
-	var obj = document.getElementsByClassName("subbutton");
-	var flag = false;
-	var min = 0;
-	var max = 0;
-	
+function toVisible(obj){
+	obj.style.visibility = "visible"
+}
+
+function toHidden(obj){
+	obj.style.visibility = "hidden"
+}
+
+function mainVisi(obj){
+	if(obj.style.visibility == "visible"){
+		toHidden(obj);
+	}else{
+		toVisible(obj);
+	}
+}
+
+function subVisi(obj){
+	if(obj.style.visibility == "visible"){
+		toHidden(obj);
+	}else{
+		toVisible(obj);
+	}
+}
+
+function subHide(num){
 	if(num == 1){
-		if(obj[0].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 0;
-		max = 1;
-		subhide();
-		setvisi(0);
+		toHidden(document.getElementById("contains11"));
+		toHidden(document.getElementById("contains12"));
+		toHidden(document.getElementById("contains13"));
 	}else if(num == 2){
-		if(obj[1].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 1;
-		max = 2;
-		subhide();
-		setvisi(0);
-	}else if(num == 3){
-		if(obj[2].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 2;
-		max = 3;
-		subhide();
-		setvisi(0);
+		toHidden(document.getElementById("contains21"));
+		toHidden(document.getElementById("contains22"));
+		toHidden(document.getElementById("contains23"));
+		toHidden(document.getElementById("contains24"));
+		toHidden(document.getElementById("contains25"));
+		toHidden(document.getElementById("contains26"));
+		toHidden(document.getElementById("contains27"));
 	}else if(num == 4){
-		if(obj[3].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 3;
-		max = 4;
-		subhide();
-		setvisi(0);
+		toHidden(document.getElementById("contains41"));
+		toHidden(document.getElementById("contains42"));
+	}else if(num ==3){
+		toHidden(document.getElementById("contains31"));
+		toHidden(document.getElementById("contains32"));
+		toHidden(document.getElementById("contains33"));
+	//add here
 	}
-	
-	if(flag){
-		for(i = min;i < max;i = i+1){
-			reverse(obj[i]);
-		}
-		flag = false;
-	}
-	
 }
 
-function dispsub(num){
-	var obj = document.getElementsByClassName("subsubbutton");
-	var flag = false;
-	var max = 0;
-	var min = 0;
-	
+function disp(num){
 	if(num == 1){
-		if(obj[0].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 0;
-		max = 2;
-		subsubhide();
-		setforarea(1);
-		taplacechange(1);
+		subHide(1);
+		mainVisi(document.getElementById("subbutton1"));
+	}else if(num == 2){
+		subHide(2);
+		mainVisi(document.getElementById("subbutton2"));
+	}else if(num == 3){
+		subHide(3);
+		mainVisi(document.getElementById("subbutton3"));
+	}else if(num == 4){
+		subHide(4);
+		mainVisi(document.getElementById("subbutton4"));
 	}
-	
-	if(num == 2){
-		if(obj[2].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 2;
-		max = 9;
-		subsubhide();
-		setforarea(2);
-		taplacechange(2);
-	}
-	
-	if(num == 3){
-		if(obj[9].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 9;
-		max = 11;// ここを増やす。以下をずらす
-		subsubhide();
-		setforarea(3);
-		taplacechange(3);
-	}
-	
-	if(num == 4){//obj[] increment
-		if(obj[11].style.visibility == "hidden"){
-			flag = true;
-		}
-		min = 11;// increment
-		max = 14;// increment
-		subsubhide();
-		setforarea(4);
-		taplacechange(4);
-	}
-	
-	if(flag){
-		for(i = min;i < max;i = i+1){
-			reverse(obj[i]);
-		}
-		flag = false;
-		setvisi(1);
+}
+
+function subDisp(num){
+	if(num == 1){
+		subVisi(document.getElementById("contains11"));
+		subVisi(document.getElementById("contains12"));
+		subVisi(document.getElementById("contains13"));
+		settxt(1);
+	}else if(num == 2){
+		subVisi(document.getElementById("contains21"));
+		subVisi(document.getElementById("contains22"));
+		subVisi(document.getElementById("contains23"));
+		subVisi(document.getElementById("contains24"));
+		subVisi(document.getElementById("contains25"));
+		subVisi(document.getElementById("contains26"));
+		subVisi(document.getElementById("contains27"));
+		settxt(2);
+	}else if(num == 3){
+		subVisi(document.getElementById("contains31"));
+		subVisi(document.getElementById("contains32"));
+		subVisi(document.getElementById("contains33"));
+		//add here
+		settxt(3);
+	}else if(num == 4){
+		subVisi(document.getElementById("contains41"));
+		subVisi(document.getElementById("contains42"));
+		settxt(4);
 	}
 }

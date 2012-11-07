@@ -1,107 +1,72 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>webpage</title>
+<!--[if ! IE]>-->
+<link rel ="stylesheet" type ="text/css" href ="./webpage.css" media ="all">
+<script type ="text/javascript" src ="./webpage.js"></script>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if IE]>
 <link rel ="stylesheet" type ="text/css" href ="./test.css" media ="all">
 <script type ="text/javascript" src ="./test.js"></script>
-
+<script type ="text/javascript">
+//window.alert("use chrome");
+</script>
+<![endif]-->
 </head>
-
-<body onclick ="animemanage()" onLoad="reset()">
+<body onclick ="animemanage()">
+<!--[if ! IE]>-->
 <img class = "bg" src = "bgex1.jpg" alt = "" />
-
-<div id = "container">
+<!--<![endif]-->
 <div id="title">
 project-10<br/>
 対話応答アルゴリズム
 </div>
-<form name ="area0">
-	<textarea name = "area0" class ="area0" rows="2" cols="20" wrap ="hard" readonly>火狐 or Chrome 推奨　click please</textarea>
-</form>
 
-<form name ="area1">
-	<textarea name ="area1" class ="area" readonly></textarea>
-</form>
+<textarea id ="opArea1" readonly>click please</textarea>
+<textarea id ="txtArea" readonly></textarea>
 
-<input type ="button" class= "button" value =""
-	onclick ="dispmain(1)" style ="visibility: hidden;top:70px"/>
-	<div>
-		<input type ="button" class ="subbutton" value ="project"
-			onclick ="dispsub(1)" style ="visibility: hidden;top: 70px"/>
-		<div>
-			<input type ="button" class ="subsubbutton" value ="about"
-				onclick ="setforarea(11)" style ="top: 70px">
-
-			<input type ="button" class ="subsubbutton" value ="plan"
-				onclick ="setforarea(12)" style ="top: 150px">
-		</div>
-	</div>
-<input type ="button" class ="button" value =""
-	onclick ="dispmain(2)" style ="visibility: hidden;top:220px"/>
-	<div>
-		<input type ="button" class ="subbutton" value ="member"
-			onclick ="dispsub(2)" style ="visibility: hidden;top: 220px;"/>
-		<div>
-			<input type ="button" class ="subsubbutton" value ="Wachi Tokuma"
-				onclick ="setforarea(21)" style ="top: 60px">
-
-			<input type ="button" class ="subsubbutton" value ="Ariga Ryo"
-				onclick ="setforarea(22)" style ="top: 140px">	
-
-			<input type ="button" class ="subsubbutton" value ="Ishiwatari Naoya"
-				onclick ="setforarea(23)" style ="top: 220px">
-			
-			<input type ="button" class ="subsubbutton"	value ="Shibuya Akira"
-				onclick ="setforarea(24)" style ="top: 300px">
-			
-			<input type ="button" class ="subsubbutton" value ="Hirata Masaharu"
-				onclick ="setforarea(25)" style ="top: 380px">
-			
-			<input type ="button" class ="subsubbutton" value ="Hiruta Takumi"
-				onclick ="setforarea(26)" style ="top: 460px">
-		
-			<input type ="button" class ="subsubbutton" value ="Mogi Ryouji"
-				onclick ="setforarea(27)" style ="top: 540px">
-		</div>
-	</div>
-<input type ="button" class ="button" value =""
-	onclick ="dispmain(3)" style ="visibility: hidden;top:370px"/>
-	<div>
-		<input type ="button" class ="subbutton" value ="record"
-			onclick ="dispsub(3)" style ="visibility: hidden;top: 370px"/>
-		<div>
-			<input type ="button" class ="subsubbutton" value ="1st"
-				onclick ="setforarea(31)" style ="top: 290px">
-
-			<input type ="button" class ="subsubbutton" value ="2nd"
-				onclick ="setforarea(32)" style ="top: 370px">
-	
-	
-		<!--ここに追加。topを80px間隔で引数値は規定の書式で
-		
-		template
-		<input type ="button" class ="subsubbutton" value ="値を設定"
-			onclick ="setforarea(規定の書式:3n)" style ="top: 間隔：80px">
-		
-		-->
-		</div>
-	</div>
-<input type ="button" class ="button" value =""
-	onclick ="dispmain(4)" style ="visibility: hidden;top:520px"/>
-	<div>
-		<input type ="button" class ="subbutton" value ="System"
-			onclick ="dispsub(4)" style ="visibility: hidden;top: 520px"/>
-		<div>
-			<a href="index.html">
-			<input type ="button" class ="subsubbutton" value ="refresh"
-				onclick ="setforarea(41)" style ="top: 440px">
-			</a>
-			<input type ="button" class ="subsubbutton" value ="project Wiki"
-				onclick ="setforarea(42)" style ="top: 520px">
-			
-			<input type ="button" class ="subsubbutton" value ="logout"
-				onclick ="setforarea(43)" style ="top: 600px">
-		</div>
-	</div>		
+<div id ="box">
+<button id ="button1" class ="mainbutton" onclick ="disp(1)">P</button>
+<button id ="button2" class ="mainbutton" onclick ="disp(2)">M</button>
+<button id ="button3" class ="mainbutton" onclick ="disp(3)">R</button>
+<button id ="button4" class ="mainbutton" onclick ="disp(4)">S</button>
+</div>
+<div>
+<button id ="subbutton1" class ="subbutton" onclick ="subDisp(1)">project</button>
+<button id ="subbutton2" class ="subbutton" onclick ="subDisp(2)">member</button>
+<button id ="subbutton3" class ="subbutton" onclick ="subDisp(3)">record</button>
+<button id ="subbutton4" class ="subbutton" onclick ="subDisp(4)">system</button>
+</div>
+<div>
+<button id ="contains11" class ="contains" onclick ="settxt(11)">about</button>
+<button id ="contains12" class ="contains" onclick ="settxt(12)">plan</button>
+<button id ="contains13" class ="contains" onclick ="settxt(13)">aim</button>
+</div>
+<div>
+<button id ="contains21" class ="contains" onclick ="settxt(21)">Wachi Tokuma</button>
+<button id ="contains22" class ="contains" onclick ="settxt(22)">Ariga Ryo</button>
+<button id ="contains23" class ="contains" onclick ="settxt(23)">Ishiwatari Naoya</button>
+<button id ="contains24" class ="contains" onclick ="settxt(24)">Shibuya Akira</button>
+<button id ="contains25" class ="contains" onclick ="settxt(25)">Hirata Masaharu</button>
+<button id ="contains26" class ="contains" onclick ="settxt(26)">Hiruta Takumi</button>
+<button id ="contains27" class ="contains" onclick ="settxt(27)">Mogi Ryoji</button>
+</div>
+<div>
+<button id ="contains31" class ="contains" onclick ="settxt(31)">1st</button>
+<button id ="contains32" class ="contains" onclick ="settxt(32)">2nd</button>
+<button id ="contains33" class ="contains" onclick ="settxt(33)">3rd</button>
+<!--
+add here
+-->
+</div>
+<div>
+<button id ="contains41" class ="contains" onclick ="settxt(41)">logout</button>
+<a href="index.html">
+<button id ="contains42" class ="contains" onclick ="settxt(42)">refresh</button>
+</a>
 </div>
 </body>
-</html> 
+</html>
