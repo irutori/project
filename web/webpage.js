@@ -107,6 +107,7 @@ function subHide(){
 	toHidden(document.getElementById("contains31"));
 	toHidden(document.getElementById("contains32"));
 	toHidden(document.getElementById("contains33"));
+	toHidden(document.getElementById("contains34"));
 	//add here
 }
 
@@ -146,6 +147,7 @@ function subDisp(num){
 		subVisi(document.getElementById("contains31"));
 		subVisi(document.getElementById("contains32"));
 		subVisi(document.getElementById("contains33"));
+		subVisi(document.getElementById("contains34"));
 		//add here
 		placechange(3);
 		settxt(3);
@@ -181,13 +183,18 @@ function settxt(num){
 	}else if(num == 4){
 		obj.value = "\nこのページに関して\n\n\n\nHints: IEで見ると･･･";
 	}else if(num == 11){
-		obj.value = "\n対話を行うプログラムの作成を行う。\n\n\n対話の応答をより\"人間らしく\"行うためのアルゴリズムを考案する\n\n\nそれに伴った応答関数を実装し評価する";
+		obj.value = "\n対話を行うプログラムの作成を行う。"
+		+"\n\n\n対話の応答をより\"人間らしく\"行うためのアルゴリズムを考案する\n\n\n"
+		+"それに伴った応答関数を実装し評価する";
 	}else if(num == 12){
-		obj.value = "\n使用言語はjava\n\n\n構文解析部はOpenNLPを利用し実装する\n\n\nまた、応答関数のアルゴリズムの考案は全員で行う";
+		obj.value = "\n使用言語はjava\n\n\n構文解析部はOpenNLPを利用し実装する"
+		+"\n\n\nまた、応答関数のアルゴリズムの考案は全員で行う";
 	}else if(num == 13){
-		obj.value = "\n現在の対話応答はデータベース依存\n\n\nデータベースに依存せずに、どれだけ人間らしい応答が出来るかを検証する";
+		obj.value = "\n現在の対話応答はデータベース依存\n\n\n"
+		+"データベースに依存せずに、どれだけ人間らしい応答が出来るかを検証する";
 	}else if(num == 21){
-		obj.value = "\nプロジェクトリーダー\n\n\n実装担当：\n\n 応答関数部\n\n  及び\n\n 構文解析部ヘルプ\n\n\n\nほむほむ";
+		obj.value = "\nプロジェクトリーダー\n\n\n"
+		+"実装担当：\n\n 応答関数部\n\n  及び\n\n 構文解析部ヘルプ\n\n\n\nほむほむ";
 	}else if(num == 22){
 		obj.value = "\n\n実装担当:\n\n 応答関数部";
 	}else if(num == 23){
@@ -197,7 +204,8 @@ function settxt(num){
 	}else if(num == 25){
 		obj.value = "\n\n実装担当:\n\n 応答関数部";
 	}else if(num == 26){
-		obj.value = "\n\n実装担当:\n\n 応答関数部\n\n  及び\n\n webページ\n\n\n\nauto loginは演出です";
+		obj.value = "\n\n実装担当:\n\n 応答関数部\n\n  "
+		+"及び\n\n webページ\n\n\n\nauto loginは演出です";
 	}else if(num == 27){
 		obj.value = "\n\n実装担当:\n\n 入出力部\n\n\n\n（・ワ・）＜です？";
 	}else if(num == 31){
@@ -205,7 +213,11 @@ function settxt(num){
 	}else if(num == 32){
 		obj.value = "\n2012-10-30\n\nwebページ公開"
 	}else if(num == 33){
-		obj.value = "\n2012-11-07\n\n第二回中間発表\n今後の課題:情報科学的に意味のあること\n\n\n追記\nwebページのアップグレード\nIEに対応しました";
+		obj.value = "\n2012-11-07\n\n第二回中間発表\n"
+		+"今後の課題:情報科学的に意味のあること\n\n\n追記\nwebページのアップグレード\nIEに対応しました";
+	}else if(num == 34){
+		obj.value ="\n2012-11-14\n\n今後の方針の決定\n\n"
+		+"現在考えているアルゴリズムの共有";
 	}
 	
 	/* template
