@@ -111,6 +111,8 @@ function subHide(){
 	toHidden(document.getElementById("contains35"));
 	toHidden(document.getElementById("contains36"));
 	toHidden(document.getElementById("contains37"));
+	toHidden(document.getElementById("contains38"));
+	toHidden(document.getElementById("contains39"));
 	//add here
 }
 
@@ -154,6 +156,8 @@ function subDisp(num){
 		subVisi(document.getElementById("contains35"));
 		subVisi(document.getElementById("contains36"));
 		subVisi(document.getElementById("contains37"));
+		subVisi(document.getElementById("contains38"));
+		subVisi(document.getElementById("contains39"));
 		//add here
 		placechange(3);
 		settxt(3);
@@ -231,6 +235,10 @@ function settxt(num){
 		+"実装時使用するユーティティの作成";
 	}else if(num == 37){
 		obj.value ="\n2012-11-28\n\n実装の開始";
+	}else if (num == 38){
+		obj.value ="\n2012-12-05\n\n評価方法の考案及び実装";
+	}else if (num == 39){
+		obj.value ="\n2012-12-07\n\n評価方法の確定及び実装";
 	}
 
 	/* template
