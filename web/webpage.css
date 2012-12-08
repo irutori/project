@@ -27,23 +27,23 @@ img.bg{
 
 #img1{
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 20%;
+	left: 20%;
 }
 #img2{
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 20%;
+	left: 20%;
 }
 #img3{
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 20%;
+	left: 20%;
 }
 #img4{
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 20%;
+	left: 20%;
 }
 
 #opArea1{
@@ -238,23 +238,40 @@ img.bg{
 
 #contains31{
 	position: absolute;
-	top: 290px;
+	top: 50px;
 	left: 590px;
 }
 
 #contains32{
 	position: absolute;
-	top: 370px;
+	top: 130px;
 	left: 590px;
 }
 
 #contains33{
 	position: absolute;
-	top: 450px;
+	top: 210px;
 	left: 590px;
 }
 
 #contains34{
+	position: absolute;
+	top: 290px;
+	left: 590px;
+}
+#contains35{
+	position: absolute;
+	top: 370px;
+	left: 590px;
+}
+
+#contains36{
+	position: absolute;
+	top: 450px;
+	left: 590px;
+}
+
+#contains37{
 	position: absolute;
 	top: 530px;
 	left: 590px;
