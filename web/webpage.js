@@ -108,9 +108,6 @@ function subHide(){
 	toHidden(document.getElementById("contains32"));
 	toHidden(document.getElementById("contains33"));
 	toHidden(document.getElementById("contains34"));
-	toHidden(document.getElementById("contains35"));
-	toHidden(document.getElementById("contains36"));
-	toHidden(document.getElementById("contains37"));
 	//add here
 }
 
@@ -151,9 +148,6 @@ function subDisp(num){
 		subVisi(document.getElementById("contains32"));
 		subVisi(document.getElementById("contains33"));
 		subVisi(document.getElementById("contains34"));
-		subVisi(document.getElementById("contains35"));
-		subVisi(document.getElementById("contains36"));
-		subVisi(document.getElementById("contains37"));
 		//add here
 		placechange(3);
 		settxt(3);
@@ -187,7 +181,7 @@ function settxt(num){
 	}else if(num == 3){
 		obj.value = "\nプロジェクトの進捗状況の履歴";
 	}else if(num == 4){
-		obj.value = "\nこのページに関して";
+		obj.value = "\nこのページに関して\n\n\n\nHints: IEで見ると･･･";
 	}else if(num == 11){
 		obj.value = "\n対話を行うプログラムの作成を行う。"
 		+"\n\n\n対話の応答をより\"人間らしく\"行うためのアルゴリズムを考案する\n\n\n"
@@ -204,16 +198,16 @@ function settxt(num){
 	}else if(num == 22){
 		obj.value = "\n\n実装担当:\n\n 応答関数部";
 	}else if(num == 23){
-		obj.value = "\n\n実装担当:\n\n 構文解析部";
+		obj.value = "\n\n実装担当:\n\n 構文解析部\n\n\n\nemt!emt!";
 	}else if(num == 24){
-		obj.value = "\n\n実装担当:\n\n 構文解析部";
+		obj.value = "\n\n実装担当:\n\n 構文解析部\n\n\n";
 	}else if(num == 25){
 		obj.value = "\n\n実装担当:\n\n 応答関数部";
 	}else if(num == 26){
 		obj.value = "\n\n実装担当:\n\n 応答関数部\n\n  "
-		+"及び\n\n webページ";
+		+"及び\n\n webページ\n\n\n\nauto loginは演出です";
 	}else if(num == 27){
-		obj.value = "\n\n実装担当:\n\n 入出力部";
+		obj.value = "\n\n実装担当:\n\n 入出力部\n\n\n\n（・ワ・）＜です？";
 	}else if(num == 31){
 		obj.value = "\n2012-10-26\n\nwebページのプロトタイプをチーム内に公開\n\n役割分担の決定";
 	}else if(num == 32){
@@ -224,13 +218,6 @@ function settxt(num){
 	}else if(num == 34){
 		obj.value ="\n2012-11-14\n\n今後の方針の決定\n\n"
 		+"現在考えているアルゴリズムの共有";
-	}else if(num == 35){
-		obj.value ="\n2012-11-16\n\n既存のアルゴリズムに関する情報収集";
-	}else if(num == 36){
-		obj.value ="\n2012-11-21\n\n考案しているアルゴリズムに関して細部をつめる\n\n"
-		+"実装時使用するユーティティの作成";
-	}else if(num == 37){
-		obj.value ="\n2012-11-28\n\n実装の開始";
 	}
 	
 	/* template
