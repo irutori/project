@@ -273,17 +273,23 @@ img.bg{
 
 #contains37{
 	position: absolute;
-	top: 370px;
+	top: 290px;
 	left: 810px;
 }
 
 #contains38{
 	position: absolute;
-	top: 450px;
+	top: 370px;
 	left: 810px;
 }
 
 #contains39{
+	position: absolute;
+	top: 450px;
+	left: 810px;
+}
+
+#contains310{
 	position: absolute;
 	top: 530px;
 	left: 810px;

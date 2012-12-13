@@ -16,7 +16,8 @@ function settxt(num){
 	}else if(num == 12){
 		obj.value = "\n使用言語はjava\n\n\n"
 		+"構文解析部はOpenNLPを利用し実装する\n\n\n"
-		+"また、応答関数のアルゴリズムの考案は全員で行う";
+		+"また、応答関数のアルゴリズムの考案は全員で行う\n\n\n"
+		+"応答生成のアルゴリズムを複数実装し、比較検証する";
 	}else if(num == 13){
 		obj.value = "\n現在の対話応答はデータベース依存"
 		+"\n\n\nデータベースに依存せずに、どれだけ人間らしい応答が出来るかを検証する";
@@ -43,9 +44,7 @@ function settxt(num){
 	}else if(num == 32){
 		obj.value = "\n2012-10-30\n\nwebページ公開"
 	}else if(num == 33){
-		obj.value = "\n2012-11-07\n\n第二回中間発表\n"
-		+"今後の課題:情報科学的に意味のあること\n\n\n"
-		+"追記\nwebページのアップグレード\nIEに対応しました";
+		obj.value = "\n2012-11-07\n\n第二回中間発表\n";
 	}else if(num == 34){
 		obj.value = "\n2012-11-14\n\n今後の方針の決定\n\n"
 		+"現在考えているアルゴリズムの共有";
@@ -60,6 +59,8 @@ function settxt(num){
 		obj.value ="\n2012-12-05\n\n評価方法の考案及び実装";
 	}else if (num == 39){
 		obj.value ="\n2012-12-07\n\n評価方法の確定及び実装";
+	}else if (num == 310){
+		obj.value ="\n2012-12-12\n\n実装";
 	}
 	
 	/* template
@@ -125,6 +126,7 @@ function subHide(num){
 		toHidden(document.getElementById("contains37"));
 		toHidden(document.getElementById("contains38"));
 		toHidden(document.getElementById("contains39"));
+		toHidden(document.getElementById("contains310"));
 	//add here
 	}
 }
@@ -170,6 +172,7 @@ function subDisp(num){
 		subVisi(document.getElementById("contains37"));
 		subVisi(document.getElementById("contains38"));
 		subVisi(document.getElementById("contains39"));
+		subVisi(document.getElementById("contains310"));
 		//add here
 		settxt(3);
 	}else if(num == 4){
