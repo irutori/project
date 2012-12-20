@@ -61,6 +61,12 @@ function settxt(num){
 		obj.value ="\n2012-12-07\n\n評価方法の確定及び実装";
 	}else if (num == 310){
 		obj.value ="\n2012-12-12\n\n実装";
+	}else if (num == 311){
+		obj.value ="\n2012-12-14\n\n実行結果の評価";
+	}else if (num == 312){
+		obj.value ="\n2012-12-19\n\n最終発表";
+	}else if (num == 313){
+		obj.value ="\n最終更新日2012-12-20\n";
 	}
 	
 	/* template
@@ -127,6 +133,9 @@ function subHide(num){
 		toHidden(document.getElementById("contains38"));
 		toHidden(document.getElementById("contains39"));
 		toHidden(document.getElementById("contains310"));
+		toHidden(document.getElementById("contains311"));
+		toHidden(document.getElementById("contains312"));
+		toHidden(document.getElementById("contains313"));
 	//add here
 	}
 }
@@ -173,6 +182,9 @@ function subDisp(num){
 		subVisi(document.getElementById("contains38"));
 		subVisi(document.getElementById("contains39"));
 		subVisi(document.getElementById("contains310"));
+		subVisi(document.getElementById("contains311"));
+		subVisi(document.getElementById("contains312"));
+		subVisi(document.getElementById("contains313"));
 		//add here
 		settxt(3);
 	}else if(num == 4){

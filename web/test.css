@@ -258,6 +258,30 @@ body {
 	width: 110px;
 	height: 110px;
 	position: absolute;
+	top: 130px;
+	left: 570px;
+}
+
+#contains311{
+	width: 110px;
+	height: 110px;
+	position: absolute;
 	top: 680px;
 	left: 570px;
+}
+
+#contains312{
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	top: 570px;
+	left: 790px;
+}
+
+#contains313{
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	top: 240px;
+	left: 130px;
 }
